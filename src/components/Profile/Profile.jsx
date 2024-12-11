@@ -1,17 +1,17 @@
+import styles from "../Profile/Profile.module.css";
 const Profile = ({ username, tag, location, avatar, stats }) => {
-    
-    return (
-        <div>
-      <img src={avatar} alt="User avatar" />
-      <p>{username}</p>
-      <p>@{tag}</p>
-      <p>{location}</p>
-      <ul>
-        <li>Followers: {stats.followers}</li>
-        <li>Views: {stats.views}</li>
-        <li>Likes: {stats.likes}</li>
+  return (
+    <div className={styles.wraper}>
+      <img className={styles.icon} src={avatar} alt="User avatar" />
+      <p className={styles.userName}>{username}</p>
+      <p className={styles.tag}>@{tag}</p>
+      <p className={styles.location}>{location}</p>
+      <ul className={styles.userList}>
+        <li className={styles.userItem}>Followers {stats.followers}</li>
+        <li className={styles.userItem}>Views {stats.views}</li>
+        <li className={styles.userItem}>Likes {stats.likes}</li>
       </ul>
     </div>
-    )
-}
+  );
+};
 export default Profile;

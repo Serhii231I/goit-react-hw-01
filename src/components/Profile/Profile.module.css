@@ -1,0 +1,53 @@
+.wraper {
+  display: flex;
+  flex-direction: column;
+  width: 229px;
+  height: 100%;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.icon {
+  display: block;
+  max-width: 100%;
+  align-items: center;
+  width: 200px;
+  border-radius: 50%;
+  margin: 10px auto;
+  background-color: rgb(43, 42, 42);
+}
+
+.userName {
+  margin: 0 auto;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.tag {
+  margin: 0 auto;
+  font-size: 20px;
+}
+
+.location {
+  margin: 0 auto;
+  font-size: 20px;
+}
+
+.userList {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+}
+
+.userItem {
+  background-color: rgb(145, 143, 143);
+  border-top: 2px solid black;
+  text-align: center;
+  width: 75px;
+}
+.userItem:not(:last-child) {
+  border-right: 2px solid black;
+}
